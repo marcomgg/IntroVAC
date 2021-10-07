@@ -1,3 +1,5 @@
+## Code to reproduce results of IntroVAC
+
 Project files explanation:
 
 program.py: contains the code to train the model and compute the losses, this is where most of the stuff happen
