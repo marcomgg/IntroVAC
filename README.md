@@ -19,13 +19,14 @@ for every execution a different new folder is created inside them whose name con
 and some of the hyperparameters used to distinguish different executions. Logging is done with Tensorboard.
 Once training is done, the collector can be run as follows:
 
+```
 python introvac/collector.py \
 --folder 'path_to_execution_folder' \
 --distance 4.0 \
 --ratio 4 \
 --best 0 \
 --direction 1 0 
-
+```
 for the EyeFacial dataset use 
 --direction 1 0 0 to add the first attribute
 --direction 0 1 0 to add the second attribute
@@ -35,7 +36,8 @@ the last 0 is always referred to the real/fake class
 Note that everything must be run from the top folder "IntroVAC" the one containing the executer
 
 We suggest to create a conda environment as follows:
-
+```
 conda create -n introvac python=3
 conda activate introvac
 pip install -r requirements.txt
+```
